@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow');
+
+$primary_color: #38314f;
+$secondary_color:#4c4167;
+$third_color:#5f5076;
+$forth_color:#6b517a;
+$fifth_color:#765178;
+
+$font_family: 'PT Sans Narrow', sans-serif;
+
+body{
+  background-color: $third_color;
+}
+
+*{
+  font-family: $font_family;
+}
+
+.notification{
+  display:none;
+  z-index:1;
+  padding:0px;
+  width:25%;
+  background-color: greenyellow;
+  position: fixed;
+  color: white;
+  right: 20px;
+  bottom: 0px;
+
+  #notification-text{
+    padding:20px 25px;
+    margin-bottom:0px;
+    color: $primary_color;
+  }
+
+  .close{
+    margin-top:5px;
+    margin-right:5px;
+    padding: 0px;
+
+    .close-button{
+      color:black;
+      font-size:15px;
+    }
+  }
+}
+
+.navbar {
+  background-color: $primary_color;
+  padding-top: 0px;
+  padding-bottom: 0px;
+
+  .navbar-brand, .nav-link {
+    color: white;
+    padding: 15px 10px;
+    font-size: 20px;
+  }
+
+  .navbar-brand:hover, .nav-item:hover {
+    transition: all .25s;
+    background-color: $third_color;
+  }
+
+  .navbar-icon{
+    font-size:20px;
+    color:white;
+  }
+
+  .navbar-toggler{
+    padding: 15px 10px 5px 10px;
+  }
+}
+
+.jumbotron{
+  border-radius: 0px;
+  background: $secondary_color;
+  color: white;
+  margin-bottom: 0px;
+
+  .title{
+    font-size: 55px;
+  }
+}
+
+.about{
+  background-color: $third_color;
+  color: white;
+  padding-top: 35px;
+  padding-bottom: 35px;
+
+  .icon{
+    display: block;
+    margin: 0px auto 25px auto;
+    font-size: 500%;
+  }
+
+  .title{
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+
+  .content{
+    font-size: 18px;
+    padding: 0px 20px;
+  }
+}
+
+.login{
+  background-color: $third_color;
+  color: white;
+  padding-top: 35px;
+  padding-bottom: 35px;
+
+  .form-group{
+    width: 33%;
+    margin: 20px auto 0px auto;
+
+    .label{
+      font-size: 18px;
+    }
+  }
+}
+
+.register{
+  background-color: $third_color;
+  color: white;
+  padding-top: 35px;
+  padding-bottom: 35px;
+
+  .form-group{
+    width: 33%;
+    margin: 20px auto 0px auto;
+
+    .label{
+      font-size: 18px;
+    }
+  }
+}
+
+.new_poll{
+  background-color: $third_color;
+  color: white;
+  padding-top: 35px;
+  padding-bottom: 35px;
+
+  .form-group{
+    width: 33%;
+    margin: 20px auto 0px auto;
+    
+    .label{
+      font-size: 18px;
+    }
+  }
+
+  .option_title{
+    font-size: 18px;
+  }
+}
+
+.mypolls{
+  background-color: $third_color;
+  color: white;
+  padding-top: 35px;
+  padding-bottom: 35px;
+
+  .poll_question{
+    background-color: $primary_color;
+    padding: 7.5px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    display: block;
+    margin: 20px auto 0px auto;
+    width:25%;
+  }
+
+  .poll_question:hover{
+    text-decoration: none;
+  }
+
+  .pagination{
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .pagination_components{
+    display: block;
+    margin: 0px auto;
+  }
+
+  .no_polls_div{
+    text-align: center;
+    
+    #no_polls_button{
+      margin-top: 20px;
+      display:inline-block;
+    }
+  }
+}
+
+.poll{
+  background-color: $third_color;
+  color: white;
+  padding-top: 35px;
+  padding-bottom: 35px;
+
+  .redirect_to_poll{
+    text-align: center;
+
+    #poll_id{
+      display: inline-block;
+      width:30%;
+      padding: .375rem .75rem;
+    }
+  }
+
+  .poll_buttons{
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .poll_view{
+
+    .option{
+      width: 33%;
+      text-align: center;
+      display:block;
+      margin: 20px auto 0px auto;
+    }
+
+    .progress{
+      height: 30px;
+      width: 33%;
+      margin:20px auto 0px auto;
+      background-color: white;
+
+      .progress-bar{
+        color: $primary_color;
+        white-space: nowrap;
+        font-size: 16.5px;
+      }
+    }
+  }
+}
+
+/* CUSTOMS */
+.custom_button{
+    background-color: $primary_color;
+    color: white;
+  }
+
+.custom-success{
+  background-color: #3dbd79;
+}
+
+.custom-danger{
+  background-color: #ff5c5c;
+}
